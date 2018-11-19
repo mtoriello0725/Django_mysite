@@ -1,0 +1,12 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+  <h3>{{post.title}}</h3>
+  <h6>on {{post.date}}</h6>
+  {{post.body|safe|linebreaks}}
+
+  <!-- If Users are allowed to post things, you do not want to have the safe tag here... Ironically makes it unsafe
+  because scripts would be able to run. 
+  Safe allows tags to be ran in the blog. <h1>Text</h1> will appear in giant text as part of the blog post. 
+  By default, Django will treat these in your favor converting tags to plain text-->
+{% endblock %}
