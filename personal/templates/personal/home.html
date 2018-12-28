@@ -3,7 +3,27 @@
 {% extends "personal/header.html" %}
 
 {% block content %}
-<p>Hey, Welcome to my website!</p>
 
-{% include "personal/includes/htmlsnippet.html" %}
+<div class="jumbotron vertical-center">
+  <div class="container container-fluid">
+    <h4 class="display-4">Michael Toriello</h4>
+    <p id="description" class="lead font-italic">Software Engineer: Passion for Developing Data-Driven, Full-Stack Applications</p>
+  </div>
+</div>
+<div class='container-fluid vertical-center'>
+  <p class="home-text">Hey, Welcome to my website!</p>
+  <br>
+  <p class="home-text">
+    My name is Michael Toriello, and I am an Electrical and Computer Engineer eager to transition my talents towards designing and deploying data-driven applications. With 3 years of experience in the telecom industry as an engineer, I understand the importance of translating various data collections into an insightful, and visual user-experience.<span id="dots">..</span></p>
+  <p class="home-text">
+    <span id="more">
+      I have top level talent as shown in my previous work utilizing Python, HTML + CSS + Javascript, and SQL/NoSQL databases. However my strongest talent is quickly adapting to new frameworks or languages to effectively solve a problem at hand.
+    </span>
+  </p>
+</div>
+<div class="text-center">
+  <button onClick="readMore()" id="readMoreBtn" class="btn btn-primary">Read More</button>
+</div>
+
+<!-- {% include "personal/includes/htmlsnippet.html" %} -->
 {% endblock %}

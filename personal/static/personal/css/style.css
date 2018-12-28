@@ -1,9 +1,39 @@
-body {
-	height: 100%;
+.display-4 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: white;
+}
+
+p {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: white;
+}
+
+#display-background {
+	background: url( "/static/personal/img/websiteBackground.jpg" );
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.jumbotron {
+	background: none;
+	padding: 5px;
+}
+
+.navbar-brand {
+	padding-right: 50px;
+}
+
+.navbar-nav > li{
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .vertical-center {
 	text-align: center;
+}
+
+#more {
+	display: none;
 }
 
 #profile-pic {
@@ -16,4 +46,22 @@ body {
 
 #footer-center {
 	text-align: center;
+}
+
+
+#top-header .navbar-nav li > a {
+	text-transform: capitalize;
+	color: #333;
+	transition: background-color .2s, color .2s;
+	
+	&:hover,
+	&:focus {
+		background-color: #333;
+		color: #fff;
+	}
+}
+
+#top-header .navbar-nav li.active > a {
+	background-color: #333;
+	color: #fff;
 }

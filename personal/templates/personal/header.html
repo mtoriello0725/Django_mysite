@@ -20,27 +20,27 @@
 
 </head>
 
-<body class="body" style="background-color:#f6f6f6">
-  <div class="container-fluid" style="min-height:95%; ">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body id=display-background class="body">
+  <div id="top-header" class="container-fluid" style="min-height:95%; ">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="/">Michael Toriello</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+        <ul class="nav navbar-nav mr-auto">
+          <li>
             <!-- Home -->
             <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <!-- About -->
-            <a class="nav-link" href="/about/">About</a>
-          </li>
-          <li class="nav-item">
+          <li>
             <!-- Blog -->
             <a class="nav-link" href="/blog/">Blog</a>
+          </li>
+          <li>
+            <!-- About -->
+            <a class="nav-link" href="/contact/">Contact</a>
           </li>
         </ul>
       </div>
@@ -57,35 +57,22 @@
         <br>
       </div>
       <div class="col-md-6">
-        <div class="jumbotron vertical-center">
-          <div class="container container-fluid">
-            <h4 class="display-4">Michael Toriello</h4>
-            <p id="description" class="lead font-italic">Software Engineer: Passion for Developing Data-Driven, Full-Stack Applications</p>
-          </div>
-        </div>
+        {% block content %}
+        {% endblock %}
       </div>
       <div class="col-md-3">
       </div>
     </div>
 
-
-    <br>
-
-    <div class="row">
-      <div class='container-fluid'>
-      <br><br>
-        {% block content %}
-        {% endblock %}
+    <footer>
+      <br>
+      <div id="footer-center" class="container-fluid vertical-center">
+        <p class="home-text"><a class="home-text" href="/contact/">Contact</a> | <a class="home-text" href="https://www.linkedin.com/in/michaeltorielloece/" target="https://www.linkedin.com/in/michaeltorielloece/">LinkedIn</a> | <a class="home-text" href="https://github.com/mtoriello0725" target="https://github.com/mtoriello0725">Github</a></p>
       </div>
-    </div>
-
+    </footer> 
   </div>
 
-  <footer>
-    <div id="footer-center" class="container-fluid" style='margin-left:15px'>
-      <p><a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Github</a></p>
-    </div>
-  </footer> 
+  <script type="text/javascript" src="{% static 'personal/js/app.js' %}"></script>
   
 </body>
 
