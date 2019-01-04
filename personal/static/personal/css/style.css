@@ -1,17 +1,20 @@
 .display-4 {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	color: white;
+	color: black;
 }
 
 p {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	color: white;
+	color: black;
+	font-size: 1.1em;
 }
 
-#display-background {
-	background: url( "/static/personal/img/websiteBackground.jpg" );
+#top-header {
+	background-image: linear-gradient(#318f9b, #ecf7f9);
 	background-size: cover;
 	background-repeat: no-repeat;
+	opacity: 1;
+	filter: alpha(opacity=60);
 }
 
 .jumbotron {
@@ -19,8 +22,16 @@ p {
 	padding: 5px;
 }
 
-.navbar-brand {
+.navbar-light {
+	background-color: #ecf7f9;
+	border-bottom: 1px solid black;
+}
+
+.navbar .navbar-brand {
 	padding-right: 50px;
+	font-size: 2em;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: black;
 }
 
 .navbar-nav > li{
@@ -57,11 +68,20 @@ p {
 	&:hover,
 	&:focus {
 		background-color: #333;
-		color: #fff;
+		color: black;
 	}
 }
 
-#top-header .navbar-nav li.active > a {
-	background-color: #333;
-	color: #fff;
+#top-header .navbar-nav > li > a {
+	border-color: #333;
+	color: black;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#readMoreBtn {
+	box-shadow: none;
+	border:0px solid transparent; /* this was 1px earlier */
+  padding: 2px 30px;
+  font-size: 42px;
+  border-radius: 15px;
 }
