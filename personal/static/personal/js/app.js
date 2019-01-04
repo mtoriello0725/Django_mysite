@@ -5,11 +5,11 @@ function readMore() {
 
 	if (dots.style.display === "none") {
 		dots.style.display = "inline";
-		btnText.innerHTML = "Read More";
+		btnText.innerHTML = '<span class="fa fa-angle-down icon-2x"  aria-hidden="true"></span>';
 		moreText.style.display = "none";
 	} else {
 		dots.style.display = "none";
-		btnText.innerHTML = "Read Less";
+		btnText.innerHTML = '<span class="fa fa-angle-up icon-2x"  aria-hidden="true"></span>';
 		moreText.style.display = "inline";
 	}
 }
