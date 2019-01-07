@@ -1,6 +1,6 @@
 # My Personal Website!
 
-#### My personal website deployed on heroku. __mtoriello0725.herokuapp.com__
+#### My personal website deployed [HERE](https://mtoriello0725.herokuapp.com/) on heroku.
 
 This website is built using the Python framework Django. The landing page has my picture, a navigation bar, and a short biography of me. If the user would like to read more, the biography can extend.
 
