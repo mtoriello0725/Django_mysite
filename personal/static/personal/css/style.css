@@ -9,6 +9,18 @@ p {
 	font-size: 1.1em;
 }
 
+.project-link {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: black;
+	font-size: 1.2em;
+}
+
+.project-link-detailed {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: black;
+	font-size: 1.0em;
+}
+
 #top-header {
 	background-image: linear-gradient(#318f9b, #ecf7f9);
 	background-size: cover;
